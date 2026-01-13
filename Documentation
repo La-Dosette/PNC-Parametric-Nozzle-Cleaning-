@@ -1,0 +1,108 @@
+## 🧠 Pattern Risk Order & Justification
+
+PNC patterns are intentionally ordered from **lowest to highest mechanical risk**.  
+Users are encouraged to start with the safest patterns and only escalate if cleaning is insufficient.
+
+Each pattern below is presented with its **mechanical role**, **risk level**, and **recommended use case**.
+
+---
+
+### 🟩 SCRUB Pattern  
+**Risk level:** Very Low  
+**Recommended as:** First step / Frequent use
+
+**Mechanical principle**  
+Short, fast lateral movements with minimal pressure and limited contact time.
+
+**Why it exists**  
+Designed to remove light residue and surface contamination without stressing:
+- the toolhead
+- the brush
+- the kinematics
+
+**Use this pattern when**
+- cleaning between prints
+- refreshing the nozzle surface
+- testing Z contact safely
+
+**Notes**
+- Not suitable for hardened blobs
+- Very forgiving in terms of Z and speed tuning
+
+---
+
+### 🟦 W Pattern  
+**Risk level:** Low  
+**Recommended as:** Default cleaning pattern
+
+**Mechanical principle**  
+Balanced back-and-forth motion with controlled direction changes.
+
+**Why it exists**  
+Provides predictable, symmetrical cleaning without biasing force in one direction.
+
+**Use this pattern when**
+- performing routine cleaning
+- calibrating the system
+- cleaning after normal prints
+
+**Notes**
+- Best first pattern to tune
+- Minimal mechanical stress
+- Works well on most materials
+
+---
+
+### 🟨 BOX Pattern  
+**Risk level:** Medium  
+**Recommended as:** Deep cleaning
+
+**Mechanical principle**  
+Rectangular motion that maximizes contact time and pressure rather than speed.
+
+**Why it exists**  
+Some residue requires **time under pressure**, not shear force.
+
+**Use this pattern when**
+- dealing with smeared or soft filament
+- cleaning sticky materials (PETG, TPU)
+- W pattern is not sufficient
+
+**Notes**
+- Speed should be kept low
+- Avoid excessive Z depth on soft brushes
+- Highly effective but slower
+
+---
+
+### 🟥 SAW Pattern  
+**Risk level:** High  
+**Recommended as:** Last resort / Targeted use
+
+**Mechanical principle**  
+Directional sawtooth motion applying alternating lateral shear forces.
+
+**Why it exists**  
+Designed to mechanically break hardened blobs and stubborn residue that resist wiping.
+
+**Use this pattern when**
+- visible blobs remain
+- filament hooks are present
+- printer was idle with a hot nozzle
+
+**Notes**
+- Most aggressive pattern
+- Requires correct Z calibration
+- Should not be the default pattern
+
+---
+
+## 🎯 Recommended Usage Strategy
+
+1. Start with **SCRUB**
+2. Use **W** as your default
+3. Add **BOX** if deeper cleaning is needed
+4. Use **SAW** only when necessary
+
+PNC does not enforce a workflow,  
+but this order minimizes risk while maximizing effectiveness.
