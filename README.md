@@ -41,5 +41,6 @@ The goal is not to be the fastest, but the most **predictable and tunable**.
 
 1. Copy `pnc.cfg` into your Klipper configuration directory  
 2. Include it in `printer.cfg`:
-⚠️ Le /Macro ne doit pas être intégré dans votre cas : il s’agit d’un chemin personnalisé, spécifique à ma configuration.
+
+⚠️"/Macro" should not be included in your case: it is a custom path, specific to my configuration.⚠️
 <img width="567" height="402" alt="Voron-2-4-01-13-2026_10_34_PM" src="https://github.com/user-attachments/assets/30e3fd8e-dadf-4afc-af39-97a75f3e37b4" />
