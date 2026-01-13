@@ -39,5 +39,6 @@ The goal is not to be the fastest, but the most **predictable and tunable**.
 
 ## 📦 Installation
 
-1. Copy `PNC.cfg` into your Klipper configuration directory  
+1. Copy `pnc.cfg` into your Klipper configuration directory  
 2. Include it in `printer.cfg`:
+<img width="567" height="402" alt="Voron-2-4-01-13-2026_10_34_PM" src="https://github.com/user-attachments/assets/30e3fd8e-dadf-4afc-af39-97a75f3e37b4" />
