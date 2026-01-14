@@ -1,7 +1,6 @@
+# PNC – Parametric Nozzle Cleaning for Klipper
 
 <img width="1536" height="1024" alt="ChatGPT Image Jan 14, 2026, 10_04_10 PM" src="https://github.com/user-attachments/assets/eefb3295-2643-427e-b990-53e59e11a187" />
-# PNC
-– Parametric Nozzle Cleaning for Klipper
 
 PNC (Parametric Nozzle Cleaning) is a **universal nozzle cleaning system for Klipper-based 3D printers**.  
 It provides multiple parametric cleaning patterns with clear separation between configuration and execution.
