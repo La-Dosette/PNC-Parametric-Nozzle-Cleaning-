@@ -1,0 +1,86 @@
+## ⚙️ Nozzle Cleaning Configuration (`NOZZLE_CLEAN_CONFIG`)
+
+This macro is a **configuration-only container** for the parametric nozzle cleaning system.  
+It defines all **global geometry, positioning, and motion parameters** shared by the nozzle cleaning patterns.
+
+> This macro does **not execute any G-code** by itself.
+
+---
+
+### 📍 Global Positioning (Brush Zone)
+
+Defines the **physical location of the cleaning brush** on the build plate.
+
+| Variable | Description |
+|--------|------------|
+| `variable_x_left` | Leftmost X coordinate of the brush area. |
+| `variable_x_right` | Rightmost X coordinate of the brush area. |
+| `variable_y_brush` | Fixed Y coordinate where the brush is located. |
+| `variable_z_brush` | Z height where the nozzle makes physical contact with the brush. |
+
+---
+
+### 📐 Global Geometry
+
+Shared geometric parameters used across multiple patterns.
+
+| Variable | Description |
+|--------|------------|
+| `variable_w_step` | Base Y-axis amplitude (mm) used for oscillating and wave-based patterns. |
+
+---
+
+### 🚀 Global Travel Settings (No Contact)
+
+Applied only to **non-contact travel moves**, ensuring safe motion above the brush.
+
+| Variable | Description |
+|--------|------------|
+| `variable_z_safe` | Safe Z height for travel moves with no brush contact. |
+| `variable_travel_speed` | Speed (mm/min) used for non-contact positioning moves. |
+
+---
+
+### 🔺 SAW Pattern Parameters (Directional / Aggressive)
+
+Controls the most aggressive cleaning pattern.
+
+| Variable | Description |
+|--------|------------|
+| `variable_saw_teeth`  | Number of individual saw “teeth” per pass. |
+| `variable_saw_passes` | Number of complete saw-pattern passes. |
+| `variable_scale_saw`  | Scaling factor applied to the saw pattern geometry. |
+| `variable_speed_saw`  | Movement speed (mm/min) during saw-pattern cleaning. |
+
+---
+
+### 🔷 W Pattern Parameters (General Cleaning)
+
+Controls the default, balanced cleaning pattern.
+
+| Variable | Description |
+|----------|-------------|
+| `variable_scale_w` | Scaling factor applied to the W-pattern geometry. |
+| `variable_speed_w` | Movement speed (mm/min) during W-pattern cleaning. |
+
+---
+
+### 🟦 BOX Pattern Parameters (Contact-Heavy)
+
+Controls the deep-cleaning, pressure-focused pattern.
+
+| Variable | Description |
+|----------|-------------|
+| `variable_box_cycles` | Number of full box-pattern cleaning cycles. |
+| `variable_scale_box`  | Scaling factor applied to the box pattern size. |
+| `variable_speed_box`  | Movement speed (mm/min) during box-pattern cleaning. |
+
+---
+
+### 📝 Notes
+
+- All distances are expressed in **millimeters (mm)**
+- All speeds are expressed in **millimeters per minute (mm/min)**
+- All variables are accessed via:
+  ```ini
+  printer["gcode_macro NOZZLE_CLEAN_CONFIG"].<variable_name>
