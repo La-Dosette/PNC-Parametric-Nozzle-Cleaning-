@@ -39,6 +39,13 @@ PNC follows a few simple rules:
 
 The goal is not to be the fastest, but the most **predictable and tunable**.
 
+Pattern example :
+
+![1 (1)](https://github.com/user-attachments/assets/73bd00ec-eaf9-4982-8c3b-12694d85c457) ![1 (4)](https://github.com/user-attachments/assets/02a8e37d-471f-438d-875f-a2c8c845afd2)
+![1 (2)](https://github.com/user-attachments/assets/9f4256c3-8aac-4df3-8fdd-563479a0eca1) ![1 (3)](https://github.com/user-attachments/assets/9d25284f-ca42-498b-99f7-b14c8b849f0a)
+
+
+
 ## 📦 Installation
 
 1. Copy `pnc.cfg` into your Klipper configuration directory  
